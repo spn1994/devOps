@@ -1,15 +1,28 @@
-name: Continuous integration
-on: [push]
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  linter-action:
+  lint:
     runs-on: ubuntu-latest
-    name: Linter action
+
     steps:
-      - uses: actions/checkout@v2
-      - name: Prepare
-        run: npm ci # you can use any custom command, just be sure it includes npm install
-      - name: Linter action
-        id: linter
-        uses: AntonKornus/TypeScript-Linter@1.0.0
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          folder: src # optional
+          node-version: '18'  # Use a versão do Node.js que você está usando no projeto
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint
+        run: npx eslint . --ext .ts,.tsx
