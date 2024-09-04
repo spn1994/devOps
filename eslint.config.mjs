@@ -1,7 +1,5 @@
 // eslint.config.js
-import { Linter } from 'eslint';
-
-export default new Linter.Config({
+export default {
   files: ['**/*.ts', '**/*.tsx'], // Especifica as extensões que você deseja verificar
   rules: {
     // Suas regras de ESLint aqui
@@ -9,4 +7,4 @@ export default new Linter.Config({
     'quotes': ['error', 'single'],
   },
   // Outras configurações conforme necessário
-});
+};
