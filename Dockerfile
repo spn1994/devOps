@@ -1,10 +1,9 @@
-# Use a imagem base oficial do Node.js
 FROM node:18
 
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
 
-# Copia o package.json e package-lock.json (ou yarn.lock) para o diretório de trabalho
+# Copia o package.json e package-lock.json para o diretório de trabalho
 COPY package*.json ./
 
 # Instala as dependências
