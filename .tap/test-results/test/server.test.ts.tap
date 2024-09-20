@@ -1,0 +1,39 @@
+TAP version 14
+# Subtest: GET /hello
+    ok 1 - Deve retornar status 200
+    ok 2 - Deve retornar a mensagem correta
+    1..2
+ok 1 - GET /hello # time=52.682ms
+
+# Subtest: GET /greet/:name
+    ok 1 - Deve retornar status 200
+    ok 2 - Deve retornar a saudação correta
+    1..2
+ok 2 - GET /greet/:name # time=1.612ms
+
+# Subtest: POST /create-user
+    ok 1 - Deve retornar status 200
+    ok 2 - Deve criar o usuário corretamente
+    1..2
+ok 3 - POST /create-user # time=6.462ms
+
+# Subtest: PUT /update-user/:id
+    ok 1 - Deve retornar status 200
+    ok 2 - Deve atualizar o usuário corretamente
+    1..2
+ok 4 - PUT /update-user/:id # time=6.668ms
+
+# Subtest: DELETE /delete-user/:id
+    ok 1 - Deve retornar status 200
+    ok 2 - Deve deletar o usuário corretamente
+    1..2
+ok 5 - DELETE /delete-user/:id # time=1.004ms
+
+# Subtest: GET /search
+    ok 1 - Deve retornar status 200
+    ok 2 - Deve retornar a mensagem de busca corretamente
+    1..2
+ok 6 - GET /search # time=1.297ms
+
+Server is running
+1..6
