@@ -9,5 +9,5 @@ app.get('/hello', () => {
 app.listen({
   port: 3333
 }).then (() => {
-  console.log('Server is runninggg');
+  console.log('Server is running');
 });
