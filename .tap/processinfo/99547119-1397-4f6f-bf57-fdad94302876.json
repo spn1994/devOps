@@ -1,0 +1,30 @@
+{
+  "date": "2024-09-20T21:18:28.244Z",
+  "argv": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Users\\spn19\\OneDrive\\Área de Trabalho\\devOps\\test\\server.test.ts"
+  ],
+  "execArgv": [
+    "--loader=file:///C:/Users/spn19/OneDrive/%C3%81rea%20de%20Trabalho/devOps/node_modules/@isaacs/ts-node-temp-fork-for-pr-2009/esm.mjs",
+    "--loader=file:///C:/Users/spn19/OneDrive/%C3%81rea%20de%20Trabalho/devOps/node_modules/@tapjs/mock/dist/esm/legacy-loader.mjs",
+    "--no-warnings",
+    "--enable-source-maps",
+    "--loader=file:///C:/Users/spn19/OneDrive/%C3%81rea%20de%20Trabalho/devOps/node_modules/@tapjs/processinfo/dist/esm/loader-legacy.mjs"
+  ],
+  "NODE_OPTIONS": "",
+  "cwd": "C:\\Users\\spn19\\OneDrive\\Área de Trabalho\\devOps",
+  "pid": 12832,
+  "ppid": 3616,
+  "parent": null,
+  "uuid": "99547119-1397-4f6f-bf57-fdad94302876",
+  "files": [
+    "C:\\Users\\spn19\\OneDrive\\Área de Trabalho\\devOps\\test\\server.test.ts",
+    "C:\\Users\\spn19\\OneDrive\\Área de Trabalho\\devOps\\src\\server.ts"
+  ],
+  "sources": {},
+  "root": "99547119-1397-4f6f-bf57-fdad94302876",
+  "externalID": "test/server.test.ts",
+  "code": 0,
+  "signal": null,
+  "runtime": 1165.2758
+}
