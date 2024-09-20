@@ -30,39 +30,39 @@ interface SearchQuery {
 }
 
 // Função 1: Rota GET simples
-app.get('/hello', () => {
-  return 'Hello World';
+app.get('/hello', (request, reply) => {
+  reply.send('Hello World'); // Usando reply
 });
 
 // Função 2: Rota GET com parâmetro
 app.get('/greet/:name', (request: FastifyRequest<{ Params: GreetParams }>, reply) => {
   const { name } = request.params;
-  return `Hello, ${name}!`;
+  reply.send(`Hello, ${name}!`); // Usando reply
 });
 
 // Função 3: Rota POST para criar um recurso
 app.post('/create-user', async (request: FastifyRequest<{ Body: CreateUserBody }>, reply) => {
   const { name, age } = request.body;
-  return { message: `User ${name} created!`, name, age };
+  reply.send({ message: `User ${name} created!`, name, age }); // Usando reply
 });
 
 // Função 4: Rota PUT para atualizar um recurso
 app.put('/update-user/:id', async (request: FastifyRequest<{ Params: UpdateUserParams, Body: UpdateUserBody }>, reply) => {
   const { id } = request.params;
   const { name, age } = request.body;
-  return { message: `User ${id} updated!`, id, name, age };
+  reply.send({ message: `User ${id} updated!`, id, name, age }); // Usando reply
 });
 
 // Função 5: Rota DELETE para remover um recurso
 app.delete('/delete-user/:id', async (request: FastifyRequest<{ Params: DeleteUserParams }>, reply) => {
   const { id } = request.params;
-  return { message: `User ${id} deleted!` };
+  reply.send({ message: `User ${id} deleted!` }); // Usando reply
 });
 
 // Função 6: Rota GET com query parameters
 app.get('/search', (request: FastifyRequest<{ Querystring: SearchQuery }>, reply) => {
   const { query } = request.query;
-  return { message: `Searching for ${query}` };
+  reply.send({ message: `Searching for ${query}` }); // Usando reply
 });
 
 app.listen({ port: 3333 }).then(() => {
