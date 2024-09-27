@@ -1,5 +1,5 @@
 {
-  "date": "2024-09-20T21:18:28.244Z",
+  "date": "2024-09-20T22:07:43.842Z",
   "argv": [
     "C:\\Program Files\\nodejs\\node.exe",
     "C:\\Users\\spn19\\OneDrive\\Área de Trabalho\\devOps\\test\\server.test.ts"
@@ -13,18 +13,18 @@
   ],
   "NODE_OPTIONS": "",
   "cwd": "C:\\Users\\spn19\\OneDrive\\Área de Trabalho\\devOps",
-  "pid": 12832,
-  "ppid": 3616,
+  "pid": 10152,
+  "ppid": 15372,
   "parent": null,
-  "uuid": "99547119-1397-4f6f-bf57-fdad94302876",
+  "uuid": "cd175768-ea35-4199-813f-4e48fe36a832",
   "files": [
     "C:\\Users\\spn19\\OneDrive\\Área de Trabalho\\devOps\\test\\server.test.ts",
     "C:\\Users\\spn19\\OneDrive\\Área de Trabalho\\devOps\\src\\server.ts"
   ],
   "sources": {},
-  "root": "99547119-1397-4f6f-bf57-fdad94302876",
+  "root": "cd175768-ea35-4199-813f-4e48fe36a832",
   "externalID": "test/server.test.ts",
   "code": 0,
   "signal": null,
-  "runtime": 1165.2758
+  "runtime": 1097.7705
 }
