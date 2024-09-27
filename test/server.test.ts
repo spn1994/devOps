@@ -15,10 +15,10 @@ tap.test('GET /hello', async t => {
 tap.test('GET /greet/:name', async t => {
   const response = await server.inject({
     method: 'GET',
-    url: '/greet/John'
+    url: '/greet/Sergio'
   });
   t.equal(response.statusCode, 200, 'Deve retornar status 200');
-  t.equal(response.body, 'Hello, John!', 'Deve retornar a saudação correta');
+  t.equal(response.body, 'Hello, Sergio!', 'Deve retornar a saudação correta');
   t.end();
 });
 // Fechar o servidor após os testes
